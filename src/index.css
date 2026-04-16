@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "DM Serif Display", serif;
+  --font-sans: "Barlow Condensed", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-primary: #2D4B3E;
+  --color-background-light: #FDFBF7;
+  --color-background-dark: #1A1C1B;
+  --color-accent: #E9D5CA;
+
+  --tracking-wider-plus: 0.15em;
+  --tracking-widest-plus: 0.3em;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-display tracking-wider-plus;
+  }
+  body {
+    @apply font-body bg-background-light text-slate-800 transition-colors duration-300;
+  }
+}
+
+.glass-nav {
+  background: rgba(253, 251, 247, 0.9);
+  backdrop-filter: blur(12px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hero-image-clip {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+  .hero-image-clip {
+    clip-path: none;
+  }
+}
