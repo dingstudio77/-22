@@ -173,7 +173,7 @@ const AtelierClasses = () => {
   const classes = [
     { title: "Hobby Class", desc: "주 1회, 4주 과정으로 꽃과 친해지는 시간입니다. 계절의 변화를 꽃으로 느껴보세요." },
     { title: "One-day Class", desc: "특별한 날, 혹은 나를 위한 선물. 단 하루 만에 완성하는 감각적인 플라워 어레인지먼트." },
-    { title: "Professional Class", desc: "플로리스트를 꿈꾸는 분들을 위한 실무 테크닉과 라비앙만의 디자인 노하우 전수." },
+    { title: "Pro Class", desc: "플로리스트를 꿈꾸는 분들을 위한 실무 테크닉과 라비앙만의 디자인 노하우 전수." },
   ];
 
   return (
